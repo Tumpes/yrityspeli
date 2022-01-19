@@ -1,0 +1,18 @@
+[
+  {
+    "nimi": "Tehtaissasi on tulipalo",
+    "vaihtoehdot": ["Soita palokunta", "Sammuta itse", "Anna tehtaan palaa"]
+  },
+  {
+    "nimi": "Kenelle myyt tavaraa?",
+    "vaihtoehdot": ["Myy venäjälle", "Myy kouvolaan", "Myy uzbekistaniin"]
+  },
+  {
+    "nimi": "Työntekijä Saku myy liikesalaisuusksia",
+    "vaihtoehdot": ["Anna potkut", "Haasta oikeuteen", "Teloita saku"]
+  },
+  {
+    "nimi": "Pekka Pisnes haluaa ostaa firmasi hintaan 65000€",
+    "vaihtoehdot": ["Myy firma", "Älä myy firmaa"]
+  }
+]
