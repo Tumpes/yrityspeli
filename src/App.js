@@ -94,13 +94,13 @@ const App = () => {
     }
 
     if (vaihtoehto === "Myy uzbekistaniin") {
-      viesti("Kouvostoliitto oli rehellinen");
+      viesti("Uzbekistani anto valuuttaa");
       setValuutta(valuutta + 1000);
     }
 
     if (vaihtoehto === "Anna potkut") {
       viesti("Joudut maksaa Sakun lopputilin");
-      setValuutta(valuutta + 300);
+      setValuutta(valuutta - 300);
     }
 
     if (vaihtoehto === "Haasta oikeuteen") {
@@ -126,7 +126,7 @@ const App = () => {
     //#endregion
 
     if (vaihtoehto === "Myy firma") {
-      if (Math.floor(1) === 1) {
+      if (Math.floor(Math.random() * 5) === 1) {
         viesti("Myit firman. Voitit pelin.");
         voitto();
       } else {
@@ -168,15 +168,15 @@ const App = () => {
     height: "100vh",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    overflow: "hidden"
+    overflow: "hidden",
   };
 
-  if(voitettu) {
-    return(
+  if (voitettu) {
+    return (
       <div style={voittoKuva2}>
         <p className="voittoteksti"> VOITIT PELIN</p>
       </div>
-    )
+    );
   }
 
   if (!aloitettu)
