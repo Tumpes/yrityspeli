@@ -136,7 +136,7 @@ const App = () => {
     }
 
     if (vaihtoehto === "Älä myy firmaa") {
-      if (Math.floor(Math.random() * 2) === 1) {
+      if (Math.floor(Math.random() * 2) === 14) {
         viesti("Sait turpaan. hammaslääkärimaksu: 30$");
         setValuutta(valuutta - 30);
       }
