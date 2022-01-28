@@ -141,6 +141,30 @@ const App = () => {
         setValuutta(valuutta - 30);
       }
     }
+    const rand = Math.floor(Math.random() * 8);
+
+    if(rand === 1) {
+alert("Jos markkinoilla on aukko siihen kannattaa tarttua.")      
+    }
+    if(rand === 2) {
+alert("Muistathan että veronkierto ei kannata.")
+    }
+    if(rand === 3) {
+alert("yrittäessa tulee epäonnistumisia mutta niistä ei kannata lannistua.")
+    }
+    if(rand === 4) {
+alert("Yrittämisessä on aina riski.")
+    }
+    if(rand === 5) {
+alert("Hyvä palvelu parantaa yrityksesi mainetta.")
+    }
+    if(rand === 6) {
+alert("Muista hajoittaa sijoituksiasi.")
+    }
+    if(rand === 7) {
+      alert("Yrittäessä oppii tärkeitä taitoja elämään.")
+          }
+      
 
     setEvent(null);
   };
