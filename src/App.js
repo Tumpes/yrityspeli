@@ -113,6 +113,7 @@ const App = () => {
       }
     }
 
+
     if (vaihtoehto === "Teloita saku") {
       if (Math.floor(Math.random() * 2) === 1) {
         viesti("Lahjoit poliisit");
