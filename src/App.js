@@ -136,12 +136,12 @@ const App = () => {
     }
 
     if (vaihtoehto === "Älä myy firmaa") {
-      if (Math.floor(Math.random() * 2) === 14) {
+      if (Math.floor(Math.random() * 2) === 1) {
         viesti("Sait turpaan. hammaslääkärimaksu: 30$");
         setValuutta(valuutta - 30);
       }
     }
-    const rand = Math.floor(Math.random() * 8);
+    const rand = Math.floor(Math.random() * 14);
 
     if(rand === 1) {
 alert("Jos markkinoilla on aukko siihen kannattaa tarttua.")      
