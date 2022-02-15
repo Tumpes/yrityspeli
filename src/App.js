@@ -113,7 +113,6 @@ const App = () => {
       }
     }
 
-
     if (vaihtoehto === "Teloita saku") {
       if (Math.floor(Math.random() * 2) === 1) {
         viesti("Lahjoit poliisit");
@@ -144,28 +143,29 @@ const App = () => {
     }
     const rand = Math.floor(Math.random() * 14);
 
-    if(rand === 1) {
-alert("Jos markkinoilla on aukko siihen kannattaa tarttua.")      
+    if (rand === 1) {
+      alert("Jos markkinoilla on aukko siihen kannattaa tarttua.");
     }
-    if(rand === 2) {
-alert("Muistathan että veronkierto ei kannata.")
+    if (rand === 2) {
+      alert("Muistathan että veronkierto ei kannata.");
     }
-    if(rand === 3) {
-alert("yrittäessa tulee epäonnistumisia mutta niistä ei kannata lannistua.")
+    if (rand === 3) {
+      alert(
+        "yrittäessa tulee epäonnistumisia mutta niistä ei kannata lannistua."
+      );
     }
-    if(rand === 4) {
-alert("Yrittämisessä on aina riski.")
+    if (rand === 4) {
+      alert("Yrittämisessä on aina riski.");
     }
-    if(rand === 5) {
-alert("Hyvä palvelu parantaa yrityksesi mainetta.")
+    if (rand === 5) {
+      alert("Hyvä palvelu parantaa yrityksesi mainetta.");
     }
-    if(rand === 6) {
-alert("Muista hajoittaa sijoituksiasi.")
+    if (rand === 6) {
+      alert("Muista hajauttaa sijoituksiasi.");
     }
-    if(rand === 7) {
-      alert("Yrittäessä oppii tärkeitä taitoja elämään.")
-          }
-      
+    if (rand === 7) {
+      alert("Yrittäessä oppii tärkeitä taitoja elämään.");
+    }
 
     setEvent(null);
   };
@@ -207,6 +207,19 @@ alert("Muista hajoittaa sijoituksiasi.")
   if (!aloitettu)
     return (
       <div style={myStyle}>
+        <div className="ohje">
+          <h1 className="ohjeOtsikko">Ohjeet</h1>
+          <p className="ohjeTeksti">
+            Hei ja tervetuloa Ismon yrittäjä peliin. Alussa valitset yrittyksesi
+            nimen. Näet yrityksesi valuutan aina oikeasta yläkulmasta. Pelissä
+            tapahtuu erilaisia asioita, joita voisi tapahtua oikeassakin
+            firmassa. tehtäväsi on valita yksi kolmesta vaihtoehdosta. Mieti
+            mikä olisi järkevin vaihtoehto. Pelissä on tarkoitus onnistua
+            myymään yritys rikkaalle miehelle, joka useimmiten peruu kaupat.
+            Lopussa tavoite on tienata myös niin paljon valuuttaa, kun
+            mahdollista.
+          </p>
+        </div>
         <div className="yrittaja">
           Yrityksen nimi:
           <input

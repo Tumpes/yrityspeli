@@ -64,3 +64,20 @@
   font-size: 200px;
   transform: translateX(50vh);
 }
+
+.ohje{     /* causes element width to shrink to fit content */
+  overflow:hidden;
+  width: 550px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.ohjeTeksti {
+  margin-left: 10px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.ohjeOtsikko{
+  margin-left: 10px;
+}
